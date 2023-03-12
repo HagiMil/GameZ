@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GameZ</string>
+    <string name="game_poster">game_poster</string>
+    <string name="Metacritic">Metacritic:</string>
+    <string name="poster">poster</string>
+    <string name="Home">Home</string>
+    <string name="Categories">Categories</string>
+    <string name="More">More</string>
+    <string name="platforms">Platforms</string>
+    <string name="nintendoimage">nintendoImage</string>
+    <string name="playstationimage">playStationImage</string>
+    <string name="xboximage">xboxImage</string>
+    <string name="pcimage">PcImage</string>
+    <string name="background_image">background_image</string>
+    <string name="search">Search</string>
+    <string name="click_image_for_more_information">Click image for more information</string>
+    <string name="new_and_popular">New and popular</string>
+</resources>

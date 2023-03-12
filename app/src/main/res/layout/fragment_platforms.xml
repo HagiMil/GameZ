@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pexels_dana_tentis_370799"
+    tools:context=".ui.platformchoice.PlatformsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/xboxImage"
+        app:layout_constraintTop_toBottomOf="@+id/xboxImage">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/background_image"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPlatforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/bevan"
+            android:padding="8dp"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="@string/platforms"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/nintendoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/black"
+            android:clickable="true"
+            android:contentDescription="@string/nintendoimage"
+            android:focusable="true"
+            android:src="@drawable/nintendo_logo"
+            app:layout_constraintEnd_toStartOf="@+id/xboxImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlatforms"
+            app:shapeAppearance="@style/SpecificCornerRounded" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/playStationImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/black"
+            android:clickable="true"
+            android:contentDescription="@string/playstationimage"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/playstation_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xboxImage"
+            app:shapeAppearance="@style/SpecificCornerRounded" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/xboxImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/black"
+            android:clickable="true"
+            android:contentDescription="@string/xboximage"
+            android:focusable="true"
+            android:src="@drawable/xbox_logo_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlatforms"
+            app:shapeAppearance="@style/SpecificCornerRounded" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pcImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/black"
+            android:clickable="true"
+            android:contentDescription="@string/pcimage"
+            android:focusable="true"
+            android:src="@drawable/pc_logo"
+            app:layout_constraintEnd_toStartOf="@+id/playStationImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nintendoImage"
+            app:shapeAppearance="@style/SpecificCornerRounded" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
