@@ -45,4 +45,4 @@ To make the app i used the following:
 -Repository
 
 
-The app was built using the MVVM ararchitecture.
+The app was built using the MVVM architecture.
